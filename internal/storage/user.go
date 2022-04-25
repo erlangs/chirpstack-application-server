@@ -43,6 +43,7 @@ type User struct {
 	CreatedAt     time.Time `db:"created_at"`
 	UpdatedAt     time.Time `db:"updated_at"`
 	PasswordHash  string    `db:"password_hash"`
+	UserName      string    `db:"username"`
 	Email         string    `db:"email"`
 	EmailVerified bool      `db:"email_verified"`
 	EmailOld      string    `db:"email_old"`

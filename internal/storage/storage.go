@@ -137,11 +137,11 @@ func Setup(c config.Config) error {
 		return err
 	}
 
-	if c.PostgreSQL.Automigrate {
-		if err := MigrateUp(d); err != nil {
-			return err
-		}
-	}
+	//if c.PostgreSQL.Automigrate {
+	//	if err := MigrateUp(d); err != nil {
+	//		return err
+	//	}
+	//}
 
 	return nil
 }
